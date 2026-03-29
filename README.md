@@ -41,8 +41,8 @@ The project uses a well-structured relational schema:
 *   `order_items`: Comprehensive record of purchased items for history tracking.
 
 ## Deployment 🌐
-*   **Demo Link**: [Your Deployed Application Link Here]
-*   **GitHub Repository**: [Your GitHub Repo Link Here]
+*   **Demo Link**: [https://amazon-clone-4juw.onrender.com](https://amazon-clone-4juw.onrender.com)
+*   **GitHub Repository**: [https://github.com/ankit-56/Amazon-Clone](https://github.com/ankit-56/Amazon-Clone)
 
 ## Local Setup 👨‍💻
 ### 1. Backend Configuration
