@@ -1,9 +1,6 @@
 const { Pool } = require('pg');
 
-const ssl =
-  process.env.PGSSLMODE === 'require' || process.env.DATABASE_URL?.includes('sslmode=require')
-    ? { rejectUnauthorized: false }
-    : false;
+const ssl = process.env.DATABASE_URL ? { rejectUnauthorized: false } : false;
 
 const pool = process.env.DATABASE_URL
   ? new Pool({ connectionString: process.env.DATABASE_URL, ssl })
