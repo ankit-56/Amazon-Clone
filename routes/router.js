@@ -1,14 +1,12 @@
 const router = require('express').Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const Razorpay = require('razorpay');
 const { query, pool } = require('../database/pg');
 const authenticate = require('../middleware/authenticate');
 const resolveSessionUser = require('../middleware/resolveSessionUser');
 const { check, validationResult } = require('express-validator');
 const { formatProductRow, fetchProductById } = require('../services/productMapper');
 const { loadUserWithCart } = require('../services/userPayload');
-const { verifyRazorpayPaymentSignature } = require('../services/razorpayVerify');
 const { sendOrderConfirmationEmail } = require('../services/orderEmail');
 
 const secretKey = process.env.SECRET_KEY;
