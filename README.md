@@ -1,8 +1,8 @@
-# <div align="center">Amazon Clone </div>
+# <div align="center">Ankit Shopping App</div>
 
-### <div align="center">A high-fidelity E-commerce implementation replicating the Amazon India Experience</div><br>
+### <div align="center">A high-fidelity E-commerce implementation inspired by the Amazon India Experience</div><br>
 
-This is a production-grade clone of the Amazon India e-commerce platform. It features a complete end-to-end shopping experience, from product discovery to a professional 3-step checkout process. This implementation prioritizes **visual accuracy**, **real-time interactivity**, and **robust backend logic**.
+This is a production-grade full-stack e-commerce platform. It features a complete end-to-end shopping experience, from product discovery to a professional 3-step checkout process. This implementation prioritizes **visual accuracy**, **real-time interactivity**, and **robust backend logic**.
 
 ## Key Features 📃
 *   **User Discovery**: 
