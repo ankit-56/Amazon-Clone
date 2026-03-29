@@ -1,4 +1,4 @@
-# <div align="center">Amazon Clone (India) — SDE Intern Assignment</div>
+# <div align="center">Amazon Clone </div>
 
 ### <div align="center">A high-fidelity E-commerce implementation replicating the Amazon India Experience</div><br>
 
