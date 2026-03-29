@@ -40,6 +40,10 @@ The project uses a well-structured relational schema:
 *   `orders`: Relational order tracking with status and payment verification.
 *   `order_items`: Comprehensive record of purchased items for history tracking.
 
+## Developer Quick Access 🚀
+*   **Live Production**: [https://ankit-shopping-app.onrender.com](https://ankit-shopping-app.onrender.com)
+*   **Local Development**: [http://localhost:3000](http://localhost:3000) (Click here when your local server is running!)
+
 ## Deployment 🌐
 *   **Demo Link**: [https://ankit-shopping-app.onrender.com](https://ankit-shopping-app.onrender.com)
 *   **GitHub Repository**: [https://github.com/ankit-56/Amazon-Clone](https://github.com/ankit-56/Amazon-Clone)
