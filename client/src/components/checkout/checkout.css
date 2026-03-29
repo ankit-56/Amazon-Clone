@@ -1,0 +1,363 @@
+/* Main Layout */
+.checkout-container {
+    max-width: 1100px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    padding: 0 15px;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+    color: #0f1111;
+}
+
+.checkout-main {
+    flex: 1;
+}
+
+.checkout-sidebar {
+    width: 290px;
+    flex-shrink: 0;
+}
+
+/* Sections */
+.checkout-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.checkout-section.active {
+    border-color: #e77600;
+}
+
+.section-header {
+    background: #fcfcfc;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h3 {
+    margin: 0;
+    font-size: 19px;
+    color: #c45500;
+}
+
+.section-header h3 span {
+    margin-right: 10px;
+}
+
+.section-summary {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.change-link {
+    color: #007185;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.change-link:hover {
+    color: #c7511f;
+    text-decoration: underline;
+}
+
+.section-content {
+    padding: 20px;
+}
+
+/* Address List */
+.address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.address-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.address-item.selected {
+    background: #fdf5ec;
+    border-color: #fbd29d;
+}
+
+.addr-info strong {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.addr-info p {
+    font-size: 13px;
+    color: #555;
+    margin: 0;
+}
+
+.add-btn {
+    background: none;
+    border: none;
+    color: #007185;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+/* Payment Options */
+.saved-payments h5, .other-payment-options h5 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pay-opt {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.pay-opt:hover {
+    background: #f7fafa;
+}
+
+.pay-opt.selected {
+    background: #fdf5ec;
+    border-color: #fbd29d;
+}
+
+.card-brand {
+    background: #131921;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.card-details span {
+    color: #555;
+    font-size: 12px;
+}
+
+/* Add Card Modal */
+.payment-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.card-modal {
+    background: #fff;
+    width: 90%;
+    max-width: 650px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-head {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-head h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.modal-close {
+    cursor: pointer;
+    color: #555;
+}
+
+.modal-body {
+    padding: 25px 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.card-form-left {
+    flex: 1;
+}
+
+.form-group.row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group.row label {
+    width: 100px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.form-group.row input, .form-group.row select {
+    flex: 1;
+    padding: 6px 10px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.form-group.row input:disabled {
+    background: #f3f3f3;
+    border-color: #ddd;
+}
+
+.expiry-row {
+    display: flex;
+    gap: 10px;
+}
+
+.card-form-right {
+    flex: 1;
+    border-left: 1px solid #eee;
+    padding-left: 30px;
+}
+
+.card-form-right p {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #444;
+}
+
+.card-logos-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+/* THE FIX: Control logo size to prevent massive text/images */
+.card-logos-row img {
+    height: 25px;
+    width: auto;
+    object-fit: contain;
+}
+
+.modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+.cancel-btn {
+    padding: 8px 15px;
+    border: 1px solid #adb1b8;
+    background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+    font-size: 13px;
+}
+
+/* Sidebar & Buttons */
+.summary-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    position: sticky;
+    top: 80px;
+}
+
+.sidebar-btn {
+    width: 100%;
+    background: linear-gradient(to bottom, #f7dfa1, #f0c14b);
+    border: 1px solid #a88734;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+}
+
+.sidebar-btn:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933);
+}
+
+.sidebar-btn:disabled {
+    background: #eee;
+    border-color: #ddd;
+    color: #999;
+}
+
+.summary-details h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.summary-total {
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #B12704;
+}
+
+/* Review Items */
+.review-item {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}

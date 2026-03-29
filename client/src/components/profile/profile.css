@@ -1,0 +1,326 @@
+.profile .banner {
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile .banner svg {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+.profile .banner h2 {
+  color: #fff;
+  position: absolute;
+  top: 26%;
+  font-size: 40px;
+}
+
+.profile .user-details {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+.profile .user-details .user-detail {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  display: flex;
+}
+.profile .user-details .user-detail .icon {
+  width: 50px;
+}
+.profile .user-details .user-detail h5 {
+  margin: 0;
+}
+.profile .user-details .user-detail .label-wrap p {
+  margin: 0;
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+}
+.profile .user-details .user-detail:hover .icon {
+  color: #1976D2;
+}
+
+@media screen and (max-width: 1200px) {
+  .profile .user-details {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .profile .user-details {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile .banner svg {
+    height: 30vh;
+  }
+  .profile .banner h2 {
+    font-size: 30px;
+  }
+  .profile .user-details {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .profile .banner svg {
+    height: 20vh;
+  }
+  .profile .banner h2 {
+    font-size: 20px;
+  }
+  .profile .user-details {
+    width: 90%;
+    margin-top: -10px;
+  }
+  .profile .user-details .icon {
+    font-size: 20px;
+    margin-left: -10px;
+    margin-right: -5px;
+  }
+  .profile .user-details h5 {
+    font-size: 16px;
+  }
+}
+
+.profile .order-list {
+  width: 900px;
+  margin: 0 auto;
+}
+.profile .order-list .order {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #D5D9D9;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.profile .order-list .order:last-child {
+  margin-bottom: 50px;
+}
+.profile .order-list .order .order-top {
+  background-color: #F0F2F2;
+  padding: 15px 20px;
+  border-bottom: 1px solid #D5D9D9;
+}
+.profile .order-list .order .order-top h6 {
+  color: #565959;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 16px;
+}
+.profile .order-list .order .order-top .order-top-details {
+  text-transform: uppercase;
+}
+.profile .order-list .order .order-top .order-id {
+  text-align: right;
+}
+.profile .order-list .order .order-top p {
+  color: #565959;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.profile .order-list .order .order-bottom {
+  padding: 20px;
+}
+.profile .order-list .order .order-bottom .order-bottom-item {
+  margin-bottom: 15px;
+}
+.profile .order-list .order .order-bottom .order-bottom-item:last-child {
+  margin-bottom: 0px;
+}
+.profile .order-list .order .order-bottom .order-bottom-item img {
+  width: 100%;
+}
+.profile .order-list .order .order-bottom .order-bottom-item h6 {
+  font-size: 14px;
+}
+.profile .order-list .order .order-bottom .order-bottom-item h6 a {
+  color: #007185;
+  text-decoration: none;
+}
+.profile .order-list .order .order-bottom .order-bottom-item h6 a:hover {
+  color: #D16F46;
+  text-decoration: underline;
+}
+.profile .order-list .order .order-bottom .order-bottom-item p {
+  font-size: 13px;
+  color: #555;
+}
+
+@media screen and (max-width: 991px) {
+  .profile .order-list {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .profile .order-list {
+    width: 500px;
+  }
+  .profile .order-list .order .order-top .order-id {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .profile .order-list {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Address Management */
+.profile-section {
+  width: 900px;
+  margin: 40px auto;
+}
+
+.profile-section h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.section-desc {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.address-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.address-card, .add-address-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 200px;
+  position: relative;
+  transition: 0.2s;
+  background: #fff;
+}
+
+.add-address-card {
+  border: 2px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #777;
+}
+
+.add-address-card:hover {
+  background: #fdfdfd;
+  color: #e47911;
+  border-color: #e47911;
+}
+
+.add-address-card .plus-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.address-card strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.address-card p {
+  font-size: 13px;
+  margin: 0;
+  color: #333;
+}
+
+.address-card .icon {
+  font-size: 18px;
+  color: #888;
+  margin-right: 8px;
+}
+
+.default-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 10px;
+  background: #eee;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.address-modal {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 500px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.address-modal form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.address-modal input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-btns {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+}
+
+.save-btn {
+  background: #ffd814;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #efefef;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .profile-section {
+    width: 90%;
+  }
+  .address-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .address-cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Demo Customer",
+      "email": "demo@amazonclone.local"
+    },
+    {
+      "id": 2,
+      "name": "Ankit Raut",
+      "email": "ankitrautsingh@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "id": 6,
+      "name": "crocs Unisex-Adult Bayaband Clog",
+      "price_rupees": 2097
+    },
+    {
+      "id": 7,
+      "name": "INDO ERA Women's Viscose Embroidered Straight Kurta Palazzo With Dupatta Set",
+      "price_rupees": 1619
+    },
+    {
+      "id": 1,
+      "name": "Lenovo ThinkBook 14 Intel Core i5 11th Gen 14 inch (35.56cm) FHD IPS Thin & Light Laptop (16GB RAM/512GB SSD/Windows 11 Home/MS Office 2021/FPR/Intel Iris Xe Graphics Mineral Grey/1.4 kg), 20VDA0TLIH",
+      "price_rupees": 61990
+    },
+    {
+      "id": 4,
+      "name": "boAt Airdopes 121v2 True Wireless Earbuds with Upto 14 Hours Playback, Lightweight Earbuds, 8MM Drivers, LED Indicators and Multifunction Controls(Active Black)",
+      "price_rupees": 1299
+    },
+    {
+      "id": 8,
+      "name": "QUBO Smart Cam 360 | 1080p Full HD Wi-Fi Camera | Trust of Hero Group | 360° Deg Coverage with Pan & Tilt | Intruder Alarm | Full Color in Low Light | Two Way Talk | Alexa & OK Google | Made in India",
+      "price_rupees": 2884
+    }
+  ]
+}
